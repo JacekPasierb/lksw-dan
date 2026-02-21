@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import { Inter, Manrope} from "next/font/google";
 import "./globals.css";
 import Header from "../components/user/layout/Header";
+import Footer from "../components/user/layout/Footer";
 
 
 const inter = Inter({
@@ -126,9 +127,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://res.cloudinary.com" />
       </head>
       <body className={`${inter.variable} ${manrope.variable}`}>
-        <Header/>
-        <main>{children}</main>
-        {/* <Footer /> */}
+        <Header />
+        <main id="main">{children}</main>
+      <Footer/>
       </body>
     </html>
   );
