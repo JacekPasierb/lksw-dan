@@ -13,7 +13,7 @@ export default function Nav() {
     ["Trenerzy", "/trainers"],
     ["Treningi", "/trainings"],
     ["Historia", "/historia"],
-    ["Kontakt", "/#kontakt"],
+    ["Kontakt", "#kontakt"],
   ] as const;
 
   const [open, setOpen] = useState(false);
