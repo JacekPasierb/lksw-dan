@@ -17,10 +17,12 @@ export default function TrainersSection() {
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeader
-          eyebrow="TRENERZY"
-          title="Sztab, który prowadzi. Nie tylko motywuje."
-        />
+        <div className="px-4 max-w-3xl">
+          <SectionHeader
+            eyebrow="TRENERZY"
+            title="Sztab, który prowadzi. Nie tylko motywuje."
+          />
+        </div>
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {trainers.map((t, i) => (

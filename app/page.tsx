@@ -1,3 +1,5 @@
+import MastersMarquee from "../components/user/home/sections/MastersMarquee";
+import WhySection from "../components/user/home/sections/WhySection";
 import PageHero from "../components/user/layout/PageHero";
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
         accent="red"
         background={{imageSrc: "/images/hero-home.webp", particles: true}}
       />
+      <WhySection />
+      <MastersMarquee />
     </>
   );
 }

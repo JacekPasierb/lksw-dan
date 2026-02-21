@@ -12,7 +12,7 @@ export default function Nav() {
     ["Dlaczego", "/#dlaczego"],
     ["Trenerzy", "/coaches"],
     ["Treningi", "/trainings"],
-    ["Historia", "/historia"],
+    ["Historia", "/history"],
     ["Kontakt", "#kontakt"],
   ] as const;
 
