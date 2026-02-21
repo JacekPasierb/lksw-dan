@@ -100,7 +100,7 @@ export default function PageHero({
               fill
               priority={size === "home"}
               sizes="100vw"
-              className="object-cover object-center"
+              className="object-cover object-[50%_20%]"
             />
           </div>
         ) : null}

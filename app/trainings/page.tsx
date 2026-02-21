@@ -13,7 +13,7 @@ export default function Page() {
           primaryCta={{label: "Sprawdź grafik", href: "#grafik"}}
           secondaryCta={{label: "Kontakt", href: "#kontakt"}}
           accent="red"
-          background={{imageSrc: "/images/hero-training.png", particles: true}}
+          background={{imageSrc: "/images/hero-training.webp", particles: true}}
           rightCard={{
             variant: "start",
             kicker: "SZYBKI START",

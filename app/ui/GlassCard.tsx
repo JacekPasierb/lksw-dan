@@ -36,6 +36,7 @@ export function RevealCard({
   image,
   tags,
   className,
+  position,
 }: {
   name: string;
   role: string;
@@ -43,6 +44,7 @@ export function RevealCard({
   image: string;
   tags: string[];
   className?: string;
+  position: string;
 }) {
   return (
     <motion.div
@@ -81,7 +83,7 @@ export function RevealCard({
                 <div className="mt-2 text-xs text-white/70">📞 {phone}</div>
               </div>
               <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] tracking-[0.18em] text-white/70">
-                COACH
+                {position}
               </div>
             </div>
 

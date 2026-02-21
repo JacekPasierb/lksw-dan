@@ -10,7 +10,7 @@ export default function Nav() {
   const menu = [
     ["Start", "/"],
     ["Dlaczego", "/#dlaczego"],
-    ["Trenerzy", "/trainers"],
+    ["Trenerzy", "/coaches"],
     ["Treningi", "/trainings"],
     ["Historia", "/historia"],
     ["Kontakt", "#kontakt"],
@@ -72,7 +72,6 @@ export default function Nav() {
                 <li key={href} className="group relative">
                   <Link
                     href={href}
-                    scroll={!href.includes("#")}
                     className="
           relative inline-flex items-center rounded-full px-3 py-2
           text-xs font-semibold tracking-wide text-white/70

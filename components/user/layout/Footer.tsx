@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer
       id="kontakt"
-      className="relative overflow-hidden border-t border-white/10 py-20 text-white"
+      className="scroll-mt-15 relative overflow-hidden border-t border-white/10 py-20 text-white"
     >
       {/* BACKGROUND STACK */}
       <div className="absolute inset-0 z-0">

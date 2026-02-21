@@ -119,7 +119,6 @@ export default function MobileMenu({
                 <motion.li key={href} variants={itemV}>
                   <Link
                     href={href}
-                    scroll={!href.includes("#")}
                     onClick={onClose}
                     className="
   group relative block overflow-hidden rounded-2xl
