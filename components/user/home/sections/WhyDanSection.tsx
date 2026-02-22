@@ -107,7 +107,7 @@ export default function WhyDanSection() {
               </Link>
 
               <Link
-                href="/trainers"
+                href="/coaches"
                 className={cn(
                   "inline-flex items-center justify-center rounded-2xl border border-white/10",
                   "bg-black/40 px-5 py-3 text-sm font-semibold text-white/85 backdrop-blur",
