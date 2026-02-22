@@ -1,4 +1,9 @@
+import AchievementsGallery from "../components/user/home/sections/AchievmentsGallery";
+import AnniversarySection from "../components/user/home/sections/AnniversarySection";
+import ClubLifeSection from "../components/user/home/sections/ClubLifeSection";
+import ForWhoSection from "../components/user/home/sections/ForWhoSection";
 import MastersMarquee from "../components/user/home/sections/MastersMarquee";
+import WhyDanSection from "../components/user/home/sections/WhyDanSection";
 import WhySection from "../components/user/home/sections/WhySection";
 import PageHero from "../components/user/layout/PageHero";
 
@@ -16,7 +21,12 @@ export default function Home() {
         accent="red"
         background={{imageSrc: "/images/hero-home.webp", particles: true}}
       />
-      <WhySection />
+      {/* <WhySection /> */}
+      <WhyDanSection />
+      <ForWhoSection />
+      <AnniversarySection />
+      <AchievementsGallery />
+      <ClubLifeSection />
       <MastersMarquee />
     </>
   );

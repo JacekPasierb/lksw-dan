@@ -1,9 +1,10 @@
 import type {Metadata} from "next";
-import { Inter, Manrope} from "next/font/google";
+import {Inter, Manrope} from "next/font/google";
 import "./globals.css";
 import Header from "../components/user/layout/Header";
 import Footer from "../components/user/layout/Footer";
-
+import AffiliationsSection from "../components/user/layout/AfilationSection";
+import ScrollToTop from "./ui/ScrollToTop";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,9 +17,6 @@ const manrope = Manrope({
   variable: "--font-manrope",
   display: "swap",
 });
-
-
-
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -128,8 +126,12 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${manrope.variable}`}>
         <Header />
-        <main id="main">{children}</main>
-      <Footer/>
+        <main id="main">
+          {children}
+          <AffiliationsSection />
+        </main>
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
