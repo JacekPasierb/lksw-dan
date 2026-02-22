@@ -4,7 +4,9 @@ import {useEffect, useId, useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {Menu, X} from "lucide-react";
+import {usePathname} from "next/navigation";
 import MobileMenu from "./MenuMobile";
+import {cn} from "@/lib/cn";
 
 export default function Nav() {
   const menu = [
@@ -13,11 +15,21 @@ export default function Nav() {
     ["Trenerzy", "/coaches"],
     ["Treningi", "/trainings"],
     ["Historia", "/history"],
-    ["Kontakt", "#kontakt"],
+    ["Kontakt", "/#kontakt"],
   ] as const;
 
+  const pathname = usePathname();
+  const [hash, setHash] = useState<string>("");
   const [open, setOpen] = useState(false);
   const panelId = useId();
+
+  // hash tracking (dla /#sekcja)
+  useEffect(() => {
+    const update = () => setHash(window.location.hash || "");
+    update();
+    window.addEventListener("hashchange", update);
+    return () => window.removeEventListener("hashchange", update);
+  }, []);
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
@@ -35,6 +47,23 @@ export default function Nav() {
       document.body.style.overflow = originalOverflow;
     };
   }, [open]);
+
+  const isActive = (href: string) => {
+    const [path, hrefHash] = href.split("#");
+    const hrefPath = path || "/";
+
+    // podstrony
+    if (hrefPath !== "/") return pathname === hrefPath;
+
+    // strona główna
+    if (pathname !== "/") return false;
+
+    // jeśli link ma hash → aktywny tylko gdy hash pasuje
+    if (hrefHash) return hash === `#${hrefHash}`;
+
+    // "Start" aktywny na / (gdy nie jesteśmy w sekcji z hashem)
+    return hash === "" || hash === "#";
+  };
 
   return (
     <nav aria-label="Główna nawigacja" className="fixed inset-x-0 top-0 z-50">
@@ -68,44 +97,50 @@ export default function Nav() {
 
             {/* DESKTOP MENU */}
             <ul className="hidden items-center gap-2 md:flex">
-              {menu.map(([label, href]) => (
-                <li key={href} className="group relative">
-                  <Link
-                    href={href}
-                    className="
-          relative inline-flex items-center rounded-full px-3 py-2
-          text-xs font-semibold tracking-wide text-white/70
-          transition-colors duration-200
-          hover:text-white focus-visible:text-white
-          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/25
-          before:pointer-events-none before:absolute before:inset-0 before:rounded-full
-          before:bg-white/0 before:transition before:duration-300
-          group-hover:before:bg-white/5
-          after:pointer-events-none after:absolute after:left-3 after:right-3 after:bottom-1.5
-          after:h-px after:origin-left after:scale-x-0 after:rounded-full
-          after:bg-gradient-to-r after:from-white/0 after:via-white/80 after:to-white/0
-          after:transition-transform after:duration-300 after:ease-out
-          group-hover:after:scale-x-100
-        "
-                  >
-                    {/* mały „glow dot” */}
-                    <span
-                      className="
-            mr-2 h-1.5 w-1.5 rounded-full bg-white/20
-            opacity-0 transition duration-300
-            group-hover:opacity-100 group-hover:bg-white/70
-          "
-                      aria-hidden="true"
-                    />
-                    {label}
-                  </Link>
-                </li>
-              ))}
+              {menu.map(([label, href]) => {
+                const active = isActive(href);
+
+                return (
+                  <li key={href} className="group relative">
+                    <Link
+                      href={href}
+                      onClick={() => setOpen(false)}
+                      className={cn(
+                        `
+                        relative inline-flex items-center rounded-full px-3 py-2
+                        text-xs font-semibold tracking-wide transition-colors duration-200
+                        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/25
+                        before:pointer-events-none before:absolute before:inset-0 before:rounded-full
+                        before:transition before:duration-300
+                        after:pointer-events-none after:absolute after:left-3 after:right-3 after:bottom-1.5
+                        after:h-px after:origin-left after:rounded-full
+                        after:bg-gradient-to-r after:from-white/0 after:via-white/80 after:to-white/0
+                        after:transition-transform after:duration-300 after:ease-out
+                        `,
+                        active
+                          ? "text-white before:bg-white/10 after:scale-x-100"
+                          : "text-white/70 hover:text-white before:bg-white/0 group-hover:before:bg-white/5 after:scale-x-0 group-hover:after:scale-x-100"
+                      )}
+                      aria-current={active ? "page" : undefined}
+                    >
+                      <span
+                        className={cn(
+                          "mr-2 h-1.5 w-1.5 rounded-full transition duration-300",
+                          active
+                            ? "bg-red-500 shadow-[0_0_18px_rgba(255,40,40,0.55)] opacity-100"
+                            : "bg-white/20 opacity-0 group-hover:opacity-100 group-hover:bg-white/70"
+                        )}
+                        aria-hidden="true"
+                      />
+                      {label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
 
             {/* RIGHT */}
             <div className="flex items-center gap-2">
-              {/* HAMBURGER — tylko mobile */}
               <button
                 type="button"
                 className="inline-flex md:hidden items-center justify-center rounded-xl border border-white/10 bg-white/5 p-2 text-white/80 transition hover:border-white/25 hover:bg-white/10"

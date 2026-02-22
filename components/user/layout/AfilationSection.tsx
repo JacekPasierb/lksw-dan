@@ -34,10 +34,10 @@ export default function AffiliationsSection() {
       <div className="absolute inset-0 -z-10 opacity-40 bg-[radial-gradient(circle_at_30%_20%,rgba(255,40,40,0.08),transparent_60%),radial-gradient(circle_at_70%_70%,rgba(255,215,90,0.06),transparent_60%)]" />
 
       {/* TOP FADE */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-14 bg-gradient-to-b from-black to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-14 blur-xl bg-gradient-to-b from-black to-transparent" />
 
       {/* BOTTOM FADE */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-black to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-14 blur-xlbg-gradient-to-t from-black to-transparent" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* LOGOS STRIP */}
