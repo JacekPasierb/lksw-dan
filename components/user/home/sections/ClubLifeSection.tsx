@@ -1,10 +1,8 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import {motion} from "framer-motion";
 import {
-  ArrowRight,
   TentTree,
   Snowflake,
   Trophy,
@@ -100,8 +98,6 @@ export default function ClubLifeSection() {
               Obozy, starty, seminaria i wydarzenia — budujemy formę w praktyce,
               a przy okazji tworzymy społeczność, która ciągnie w górę.
             </motion.p>
-
-          
 
             {/* small “status” card */}
             <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur">

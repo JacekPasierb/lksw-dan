@@ -4,7 +4,6 @@ import ClubLifeSection from "../components/user/home/sections/ClubLifeSection";
 import ForWhoSection from "../components/user/home/sections/ForWhoSection";
 import MastersMarquee from "../components/user/home/sections/MastersMarquee";
 import WhyDanSection from "../components/user/home/sections/WhyDanSection";
-import WhySection from "../components/user/home/sections/WhySection";
 import PageHero from "../components/user/layout/PageHero";
 
 export default function Home() {
