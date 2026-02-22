@@ -3,6 +3,11 @@
 :root {
   --font-head: var(--font-inter);
   --font-body: var(--font-manrope);
+
+  --color-background: #000;
+  --color-foreground: #fff;
+
+  --color-primary: #ffffff;
 }
 
 /* Global typography */
@@ -15,6 +20,8 @@ html {
 body {
   font-family: var(--font-body), system-ui, -apple-system, Segoe UI, Roboto,
     Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    background: var(--color-background) ;
+    color: var(--color-primary) ;
 }
 
 /* Headings */
