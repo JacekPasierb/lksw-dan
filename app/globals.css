@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --font-head: var(--font-inter);
@@ -81,3 +79,34 @@ h2 {
 .animate-marquee-reverse {
   animation: marquee-reverse 85s linear infinite;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
