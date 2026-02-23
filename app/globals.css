@@ -10,6 +10,12 @@
   --color-primary: #ffffff;
 }
 
+/* Zapobiega poziomemu scrollowi (elementy z left/right ujemnym, blury) */
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* Global typography */
 html {
   text-rendering: geometricPrecision;
