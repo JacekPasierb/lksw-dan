@@ -7,10 +7,8 @@ import {easeOut} from "../../../../app/ui/EasyOut";
 
 export default function MastersMarquee() {
   return (
-    <section className="relative my-14 overflow-hidden">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* HEADER: badge left, content centered */}
-        <div className="relative py-2">
+    <>
+      <div className="relative py-2">
           {/* LEFT badge (desktop left), on mobile stays above */}
           <motion.div
             initial={{opacity: 0, y: 14}}
@@ -51,14 +49,12 @@ export default function MastersMarquee() {
               fundament naszego systemu szkolenia i poziomu sportowego.
             </motion.p>
           </div>
-        </div>
       </div>
 
-      {/* MARQUEE */}
       <div className="relative mt-10 space-y-6">
         <MarqueeRow items={masters} direction="left" />
       </div>
-    </section>
+    </>
   );
 }
 

@@ -5,6 +5,7 @@ import ForWhoSection from "../components/user/home/sections/ForWhoSection";
 import MastersMarquee from "../components/user/home/sections/MastersMarquee";
 import WhyDanSection from "../components/user/home/sections/WhyDanSection";
 import PageHero from "../components/user/layout/PageHero";
+import {Section} from "./ui/Section";
 
 export default function Home() {
   return (
@@ -20,13 +21,25 @@ export default function Home() {
         accent="red"
         background={{imageSrc: "/images/hero-home.webp", particles: true}}
       />
-      {/* <WhySection /> */}
-      <WhyDanSection />
-      <ForWhoSection />
+
+      <Section id="dlaczego" skin="neutral" dividerAbove="wave">
+        <WhyDanSection />
+      </Section>
+      <Section id="dla-kogo" skin="gradient" dividerAbove="line">
+        <ForWhoSection />
+      </Section>
+
       <AnniversarySection />
-      <AchievementsGallery />
-      <ClubLifeSection />
-      <MastersMarquee />
+
+      <Section id="galeria" skin="neutral" dividerAbove="wave">
+        <AchievementsGallery />
+      </Section>
+      <Section id="zycie-klubu" skin="gradient" dividerAbove="line">
+        <ClubLifeSection />
+      </Section>
+      <Section id="seminaria" skin="pattern" dividerAbove="gradient">
+        <MastersMarquee />
+      </Section>
     </>
   );
 }

@@ -45,16 +45,13 @@ const GROUPS = [
 
 export default function ForWhoSection() {
   return (
-    <section className="relative py-14 sm:py-18">
-      {/* background wash */}
-      <div className="absolute inset-0 -z-10">
+    <>
+      <div className="absolute inset-0 -z-10" aria-hidden>
         <div className="absolute inset-0 bg-black" />
         <div className="absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.06),transparent_55%),radial-gradient(circle_at_85%_70%,rgba(255,40,40,0.10),transparent_60%)]" />
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* header */}
-        <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
+      <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-7">
             <motion.div
               initial={{opacity: 0, y: 14}}
@@ -110,10 +107,9 @@ export default function ForWhoSection() {
               </Link>
             </motion.div>
           </div>
-        </div>
+      </div>
 
-        {/* cards */}
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mt-10 grid gap-5 md:grid-cols-3">
           {GROUPS.map((g, i) => {
             const Icon = g.icon;
             return (
@@ -182,8 +178,7 @@ export default function ForWhoSection() {
               </motion.div>
             );
           })}
-        </div>
       </div>
-    </section>
+    </>
   );
 }

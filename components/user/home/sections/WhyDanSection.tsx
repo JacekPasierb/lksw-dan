@@ -37,9 +37,9 @@ const CARDS = [
 
 export default function WhyDanSection() {
   return (
-    <section id="dlaczego" className="relative py-14 sm:py-18">
+    <>
       {/* background wash (pod hero) */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10" aria-hidden>
         <div className="absolute inset-0 bg-black" />
         <div className="absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_15%_25%,rgba(255,255,255,0.06),transparent_55%),radial-gradient(circle_at_85%_70%,rgba(255,40,40,0.12),transparent_60%)]" />
         <div className="absolute inset-0 opacity-20 [mask-image:radial-gradient(circle_at_50%_35%,black,transparent_70%)]">
@@ -47,9 +47,8 @@ export default function WhyDanSection() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* header */}
-        <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
+      {/* header */}
+      <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-7">
             <motion.div
               initial={{opacity: 0, y: 14}}
@@ -118,10 +117,10 @@ export default function WhyDanSection() {
               </Link>
             </motion.div>
           </div>
-        </div>
+      </div>
 
-        {/* cards */}
-        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      {/* cards */}
+      <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {CARDS.map((c, i) => {
             const Icon = c.icon;
             return (
@@ -177,8 +176,7 @@ export default function WhyDanSection() {
               </motion.div>
             );
           })}
-        </div>
       </div>
-    </section>
+    </>
   );
 }

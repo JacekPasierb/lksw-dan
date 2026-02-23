@@ -20,8 +20,8 @@ html {
 body {
   font-family: var(--font-body), system-ui, -apple-system, Segoe UI, Roboto,
     Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-    background: var(--color-background) ;
-    color: var(--color-primary) ;
+  background: var(--color-background);
+  color: var(--color-primary);
 }
 
 /* Headings */
@@ -36,7 +36,6 @@ h6 {
   letter-spacing: -0.02em;
 }
 
-
 h1 {
   letter-spacing: -0.04em;
 }
@@ -44,7 +43,6 @@ h1 {
 h2 {
   letter-spacing: -0.03em;
 }
-
 
 :focus-visible {
   outline: none;
@@ -55,9 +53,77 @@ h2 {
   color: white;
 }
 
-
 :target {
-  scroll-margin-top: 96px; 
+  scroll-margin-top: 96px;
+}
+
+/* ========== SEKCJE — globalny system ========== */
+:root {
+  --section-max: 80rem;
+  --section-px: 1rem;
+  --section-py: 3rem;
+  --section-py-lg: 4.5rem;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --section-px: 1.5rem;
+    --section-py: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --section-px: 2rem;
+    --section-py: var(--section-py-lg);
+    --section-py-lg: 5.5rem;
+  }
+}
+
+/* Wrapper sekcji: oddech, kontener */
+.section {
+  width: 100%;
+  padding-top: var(--section-py);
+  padding-bottom: var(--section-py);
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-top: var(--section-py-lg);
+    padding-bottom: var(--section-py-lg);
+  }
+}
+
+.section-inner {
+  width: 100%;
+  max-width: var(--section-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--section-px);
+  padding-right: var(--section-px);
+}
+
+/* Skóry sekcji — naprzemienne tła (subtelne, bez psucia czytelności) */
+.section-skin-neutral {
+  background-color: #000;
+}
+
+.section-skin-gradient {
+  background-color: #000;
+  background-image: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255, 255, 255, 0.04) 0%, transparent 55%);
+}
+
+.section-skin-pattern {
+  background-color: #000;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Sekcja jasna (np. afiliacje) */
+.section-skin-light {
+  background-color: #fff;
+  background-image: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(220, 38, 38, 0.05) 0%, transparent 50%);
 }
 
 /* Marquee animation */
@@ -86,34 +152,3 @@ h2 {
 .animate-marquee-reverse {
   animation: marquee-reverse 85s linear infinite;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

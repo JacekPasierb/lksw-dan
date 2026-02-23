@@ -5,6 +5,7 @@ import Header from "../components/user/layout/Header";
 import Footer from "../components/user/layout/Footer";
 import AffiliationsSection from "../components/user/layout/AfilationSection";
 import ScrollToTop from "./ui/ScrollToTop";
+import { Section } from "./ui/Section";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -128,7 +129,9 @@ export default function RootLayout({
         <Header />
         <main id="main">
           {children}
-          <AffiliationsSection />
+          <Section id="afiliacje" skin="light" dividerAbove="wave" dividerBelow="wave" dividerFill="#fff">
+            <AffiliationsSection />
+          </Section>
         </main>
         <Footer />
         <ScrollToTop />

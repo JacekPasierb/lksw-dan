@@ -56,15 +56,13 @@ const ITEMS: Item[] = [
 
 export default function ClubLifeSection() {
   return (
-    <section className="relative py-16 sm:py-20">
-      {/* background wash */}
-      <div className="absolute inset-0 -z-10">
+    <>
+      <div className="absolute inset-0 -z-10" aria-hidden>
         <div className="absolute inset-0 bg-black" />
         <div className="absolute inset-0 opacity-70 bg-[radial-gradient(circle_at_15%_20%,rgba(255,255,255,0.06),transparent_55%),radial-gradient(circle_at_85%_70%,rgba(255,40,40,0.10),transparent_60%)]" />
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
+      <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           {/* LEFT: copy + CTA */}
           <div className="lg:col-span-5">
             <motion.div
@@ -177,8 +175,7 @@ export default function ClubLifeSection() {
               })}
             </div>
           </div>
-        </div>
       </div>
-    </section>
+    </>
   );
 }
