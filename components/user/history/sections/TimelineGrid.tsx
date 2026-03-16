@@ -14,7 +14,7 @@ export default function TimelineGrid() {
       <div className="mb-12 max-w-3xl">
         <SectionHeader
           eyebrow="OŚ CZASU"
-          title="Jak powstawał LKSW DAN"
+          title="Jak powstawał Martial Arts Academy"
           desc="Najważniejsze momenty, ludzie i wydarzenia, które zbudowały klub na przestrzeni lat."
         />
       </div>

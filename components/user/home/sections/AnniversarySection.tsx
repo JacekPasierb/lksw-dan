@@ -14,8 +14,8 @@ export default function AnniversarySection() {
       {/* BACKGROUND */}
       <div className="absolute inset-0 z-0" aria-hidden="true">
         <Image
-          src="/images/30lecie.webp"
-          alt=""
+          src="/placeholder/30lecie.webp"
+          alt="Trening sportów walki"
           fill
           sizes="100vw"
           className="object-cover object-center"
@@ -45,8 +45,8 @@ export default function AnniversarySection() {
       {/* CONTENT */}
       <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          eyebrow="30 lat tradycji i doświadczenia"
-          title="W 2024 roku LKSW DAN obchodził 30-lecie działalności."
+          eyebrow="Doświadczenie • Dyscyplina • Rozwój"
+          title="Szkolimy zawodników i pasjonatów sportów walki"
         />
 
         <motion.div
@@ -63,30 +63,30 @@ export default function AnniversarySection() {
             <div>
               <div className="flex items-center gap-3 text-sm text-white/70">
                 <Calendar className="h-4 w-4" />
-                Od 1994 roku
+                Od 2005 roku
               </div>
 
               <h3 className="mt-3 text-3xl font-black tracking-tight text-white">
-                Trzy dekady rozwoju
+                Budujemy charakter i formę
               </h3>
 
               <p className="mt-4 leading-relaxed text-white/70">
-                Przez 30 lat wychowaliśmy setki zawodników, trenerów i
-                pasjonatów sportów walki.
+                Nasza akademia sportów walki stawia na rozwój, dyscyplinę oraz
+                profesjonalne szkolenie.
               </p>
 
               <p className="mt-4 text-sm text-white/65">
-                Jubileusz 2024 był dla nas potwierdzeniem, że obrany kierunek
-                jest właściwy.
+                Treningi prowadzimy zarówno dla początkujących, jak i
+                zaawansowanych zawodników.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
               {[
-                {label: "Lat działalności", value: "30+"},
-                {label: "Rok założenia", value: "1994"},
-                {label: "Wychowanków", value: "1000+"},
-                {label: "Lider szkolenia", value: "Region"},
+                {label: "Lat doświadczenia", value: "15+"},
+                {label: "Wyszkolonych zawodników", value: "500+"},
+                {label: "Turniejów", value: "120+"},
+                {label: "Trenerów", value: "5"},
               ].map((x) => (
                 <div
                   key={x.label}

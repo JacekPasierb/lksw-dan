@@ -264,7 +264,7 @@ export default function ClubLifeSection() {
                       aria-hidden
                     />
                     <div className="relative mt-4 flex items-center justify-between text-xs text-white/50">
-                      <span>LKSW DAN</span>
+                      <span>Martial Arts Academy</span>
                       <span className="inline-flex items-center gap-1.5">
                         <Snowflake className="h-3.5 w-3.5" aria-hidden />
                         sezon cały rok

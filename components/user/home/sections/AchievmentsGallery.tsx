@@ -22,30 +22,30 @@ const TOP_TILES: Tile[] = [
     title: "Zawody",
     desc: "Startujemy regularnie i budujemy pewność w warunkach sportowej presji.",
     icon: Camera,
-    image: "/images/achievments/turnee.webp",
+    image: "/placeholder/zawody.webp",
     tag: "WYJAZDY",
   },
   {
     title: "Medale",
     desc: "Efekt treningu ma być realny — przygotowanie, forma i wynik.",
     icon: Medal,
-    image: "/images/achievments/medale.webp",
+    image: "/placeholder/medale.webp",
     tag: "OSIĄGNIĘCIA",
   },
   {
     title: "Ekipa",
     desc: "Społeczność, która ciągnie w górę. Trening to ludzie i atmosfera.",
     icon: Users,
-    image: "/images/achievments/team.webp",
+    image: "/placeholder/team.webp",
     tag: "KLUB",
   },
 ];
 
 const GALLERY = [
-  {src: "/images/achievments/wyjazd.webp", alt: "Zawody – wyjazd"},
-  {src: "/images/achievments/medals.webp", alt: "Medale – podium"},
-  {src: "/images/achievments/group.webp", alt: "Zdjęcie grupowe"},
-  {src: "/images/achievments/zawody.webp", alt: "Turniej"},
+  {src: "/placeholder/camp.webp", alt: "Zawody – wyjazd"},
+  {src: "/placeholder/medale.webp", alt: "Medale – podium"},
+  {src: "/placeholder/group.webp", alt: "Zdjęcie grupowe"},
+  {src: "/placeholder/zawody.webp", alt: "Turniej"},
 ] as const;
 
 export default function AchievementsGallery() {
@@ -209,7 +209,7 @@ export default function AchievementsGallery() {
                     <div className="text-sm font-semibold text-white/90">
                       {img.alt}
                     </div>
-                    <div className="mt-1 text-xs text-white/60">LKSW DAN</div>
+                    <div className="mt-1 text-xs text-white/60">MARTIAL ARTS ACADEMY</div>
                   </div>
                 </div>
 

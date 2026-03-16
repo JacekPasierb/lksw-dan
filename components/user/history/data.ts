@@ -1,33 +1,23 @@
 export const timeline = [
   {
-    year: "1978–1985",
-    title: "Początki taekwondo w Świdniku",
-    desc: "Pierwsze sekcje prowadzone przez Jerzego Konarskiego oraz działalność przy klubie Emka.",
+    year: "2005",
+    title: "Początki Martial Arts Academy",
+    desc: "Pierwsze sekcje prowadzone przez trenerów. Pierwszy trening – 27 września 2005 r.",
   },
   {
-    year: "1994",
-    title: "Powstanie Klubu DAN",
-    desc: "Założenie klubu przez Piotra Bernat. Pierwszy trening – 27 września 1994 r.",
+    year: "2006",
+    title: "Rozwój sekcji i treningów",
+    desc: "Pierwsze sekcje prowadzone przez trenerów. Pierwszy trening – 27 września 2005 r.",
   },
   {
-    year: "1995–1996",
-    title: "Wejście na arenę krajową i międzynarodową",
-    desc: "Członkostwo w PZTS, pierwsze obozy, zawody i start zagraniczny w Belgii.",
+    year: "2007",
+    title: "Nowa era Martial Arts Academy",
+    desc: "Pierwsze sekcje prowadzone przez trenerów. Pierwszy trening – 27 września 2005 r.",
   },
   {
-    year: "2000+",
-    title: "Rozwój stylów i systemu szkolenia",
-    desc: "PUT, ITF, kickboxing, hapkido, formuły otwarte i międzystylowe.",
-  },
-  {
-    year: "2003–2005",
-    title: "Nowa era LKSW DAN",
-    desc: "Zmiana nazwy i przyjęcie do Polskiego Związku Kickboxingu.",
-  },
-  {
-    year: "2024",
-    title: "30-lecie klubu",
-    desc: "Trzy dekady szkolenia, tradycji i budowania charakteru.",
+    year: "2008",
+    title: "Rozwój sekcji i treningów",
+    desc: "Pierwsze sekcje prowadzone przez trenerów. Pierwszy trening – 27 września 2005 r.",
   },
 ] as const;
 
@@ -60,6 +50,41 @@ export const masters = [
   "Tadeusz Poljański – 2.dan kickboxing",
   "Krzysztof Bulanda – 1.dan kickboxing",
   "Artur Cholewa – 1.dan taekwondo",
+] as const;
+
+export const academyHighlights = [
+  {
+    title: "Trening dla początkujących",
+    desc: "Bezpieczne wejście w świat sportów walki i mocne podstawy od pierwszych zajęć.",
+  },
+  {
+    title: "Grupy dla dzieci i młodzieży",
+    desc: "Zajęcia rozwijające sprawność, dyscyplinę, pewność siebie i dobrą współpracę.",
+  },
+  {
+    title: "Przygotowanie do zawodów",
+    desc: "Rozwój techniki, kondycji i mentalności potrzebnej do sportowej rywalizacji.",
+  },
+  {
+    title: "Silna społeczność",
+    desc: "Budujemy atmosferę wsparcia, motywacji i relacji, które zostają na lata.",
+  },
+  {
+    title: "Nowoczesne podejście",
+    desc: "Łączymy tradycję treningu z nowoczesnym podejściem do rozwoju zawodników.",
+  },
+  {
+    title: "Obozy i wydarzenia sportowe",
+    desc: "Wspólne wyjazdy, seminaria, turnieje i aktywności, które integrują cały klub.",
+  },
+  {
+    title: "Rozwój charakteru",
+    desc: "Trening to nie tylko technika, ale też konsekwencja, szacunek i wytrwałość.",
+  },
+  {
+    title: "Dla różnych poziomów",
+    desc: "Prowadzimy treningi zarówno dla osób początkujących, jak i ambitnych zawodników.",
+  },
 ] as const;
 
 export const orgs = [

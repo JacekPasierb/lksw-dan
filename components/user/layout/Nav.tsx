@@ -78,7 +78,7 @@ export default function Nav() {
             >
               <span className="grid h-9 w-9 place-items-center overflow-hidden rounded-xl border border-white/10 bg-white/5">
                 <Image
-                  src="/images/logo.webp"
+                  src="/placeholder/logo.webp"
                   alt="LKSW DAN logo"
                   width={32}
                   height={32}
@@ -87,10 +87,10 @@ export default function Nav() {
 
               <div className="leading-tight">
                 <div className="text-sm font-extrabold tracking-tight text-white">
-                  DAN
+                 MARTIAL ARTS ACADEMY
                 </div>
                 <div className="text-[10px] tracking-[0.24em] text-white/55">
-                  LKSW DAN · LUBLIN
+                 FIGHT · DISCIPLINE
                 </div>
               </div>
             </Link>

@@ -58,7 +58,7 @@ export default function WhyDanSection() {
               className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs tracking-[0.22em] text-white/70 backdrop-blur"
             >
               <span className="inline-flex h-2 w-2 rounded-full bg-red-500 shadow-[0_0_18px_rgba(255,40,40,0.55)]" />
-              DLACZEGO DAN
+              DLACZEGO MARTIAL ARTS ACADEMY
             </motion.div>
 
             <motion.h2
@@ -170,7 +170,7 @@ export default function WhyDanSection() {
 
                   {/* micro footer */}
                   <div className="relative mt-4 text-xs tracking-wide text-white/55">
-                    Standard LKSW DAN
+                    Standard Martial Arts Academy
                   </div>
                 </div>
               </motion.div>

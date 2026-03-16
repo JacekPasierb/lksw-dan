@@ -1,3 +1,4 @@
+import AcademyHighlightsMarquee from "../components/user/home/sections/AcademyHighlihsMarquee";
 import AchievementsGallery from "../components/user/home/sections/AchievmentsGallery";
 import AnniversarySection from "../components/user/home/sections/AnniversarySection";
 import ClubLifeSection from "../components/user/home/sections/ClubLifeSection";
@@ -12,14 +13,14 @@ export default function Home() {
     <>
       <PageHero
         size="home"
-        eyebrow="LKSW DAN · SPORTY WALKI · REGION LUBLINA"
+        eyebrow="MARTIAL ARTS ACADEMY"
         title="Siła. Dyscyplina. Charakter."
         desc="Trenujesz w klubie, nie w „dyscyplinie z listy”. Trener dobiera plan pod grupę i poziom — technika, dynamika, kondycja, praca zadaniowa..."
         primaryCta={{label: "Dołącz do klubu", href: "/trainings"}}
         secondaryCta={{label: "Sprawdź grafik", href: "/trainings#grafik"}}
         highlights={["Plan wejścia", "Grupy poziomami"]}
         accent="red"
-        background={{imageSrc: "/images/hero-home.webp", particles: true}}
+        background={{imageSrc: "/placeholder/hero-home.webp", particles: true}}
       />
 
       <Section id="dlaczego" skin="neutral" dividerAbove="wave">
@@ -38,7 +39,8 @@ export default function Home() {
         <ClubLifeSection />
       </Section>
       <Section id="seminaria" skin="pattern" dividerAbove="gradient">
-        <MastersMarquee />
+        {/* <MastersMarquee /> */}
+        <AcademyHighlightsMarquee />
       </Section>
     </>
   );

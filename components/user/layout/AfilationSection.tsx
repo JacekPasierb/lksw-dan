@@ -13,15 +13,15 @@ type Org = {
 const ORGANIZATIONS: Org[] = [
   {
     name: "Polski Związek Kickboxingu",
-    logo: "/images/organizations/logo_pzkb.webp",
+    logo: "/placeholder/sponsor.png",
   },
   {
     name: "ITF Union",
-    logo: "/images/organizations/logo_itf.webp",
+    logo: "/placeholder/sponsor.png",
   },
   {
     name: "LZS",
-    logo: "/images/organizations/logo_lzs.webp",
+    logo: "/placeholder/sponsor.png",
   },
 ];
 

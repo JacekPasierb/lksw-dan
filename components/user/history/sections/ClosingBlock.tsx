@@ -18,7 +18,7 @@ export default function ClosingBlock() {
         Historia, która buduje przyszłość
       </h3>
       <p className="mx-auto mt-3 max-w-2xl text-sm text-white/70">
-        LKSW DAN to system — oparty na tradycji, ale nastawiony na rozwój
+        Martial Arts Academy to system — oparty na tradycji, ale nastawiony na rozwój
         kolejnych pokoleń.
       </p>
     </motion.div>

@@ -15,7 +15,7 @@ export default function Page() {
         primaryCta={{label: "Zobacz trenerów", href: "#lista"}}
         secondaryCta={{label: "Kontakt", href: "#kontakt"}}
         accent="red"
-        background={{imageSrc: "/images/coaches.webp", particles: true}}
+        background={{imageSrc: "/placeholder/trainers-bg.webp", particles: true}}
         rightCard={{
           variant: "start",
           kicker: "KADRA",

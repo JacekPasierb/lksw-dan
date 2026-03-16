@@ -36,7 +36,7 @@ type RightCard =
   | {variant: "custom"; node: React.ReactNode};
 
 export default function PageHero({
-  eyebrow = "LKSW DAN",
+  eyebrow = "YOUR CLUB NAME",
   title,
   desc,
   crumbs,
@@ -48,7 +48,11 @@ export default function PageHero({
   align = "left",
 
   size = "default",
-  background = {imageSrc: "/team.jpg", imageAlt: "LKSW DAN", particles: true},
+  background = {
+    imageSrc: "/team.jpg",
+    imageAlt: "Martial arts club training",
+    particles: true,
+  },
 
   highlights,
   rightCard = {variant: "none"},

@@ -13,8 +13,8 @@ export default function Footer() {
       {/* BACKGROUND STACK */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/footer-bg.webp"
-          alt="LKSW DAN – 30-lecie"
+          src="/placeholder/footer.webp"
+          alt="Martial Arts Academy "
           fill
           className="object-cover object-center"
           sizes="100vw"
@@ -33,8 +33,8 @@ export default function Footer() {
           <div className="inline-flex items-center gap-2">
             <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-2xl border border-white/10 bg-white/5">
               <Image
-                src="/images/logo.webp"
-                alt="LKSW DAN logo"
+                src="/placeholder/logo.png"
+                alt="Martial Arts Academy logo"
                 width={34}
                 height={34}
                 className="object-contain"
@@ -43,9 +43,9 @@ export default function Footer() {
             </span>
 
             <div>
-              <div className="text-base font-extrabold tracking-tight">DAN</div>
+              <div className="text-base font-extrabold tracking-tight">MARTIAL ARTS ACADEMY</div>
               <div className="text-[10px] tracking-[0.24em] text-white/55">
-                LKSW DAN · LUBLIN
+                MARTIAL ARTS ACADEMY · DISCIPLINE
               </div>
             </div>
           </div>
@@ -84,20 +84,20 @@ export default function Footer() {
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
                 <a className="hover:underline" href="tel:+48602351585">
-                  +48 602 351 585
+                  +48 600 123 123 (adres do uzupełnienia)
                 </a>
               </div>
 
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
                 <a className="hover:underline" href="mailto:lkswdan@gmail.com">
-                  lkswdan@gmail.com
+                  martialartsacademy@gmail.com
                 </a>
               </div>
 
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                <span>Lublin · (adres do uzupełnienia)</span>
+                <span>DISCIPLINE · (adres do uzupełnienia)</span>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function Footer() {
         {/* BOTTOM */}
         <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-white/15 pt-6 sm:flex-row sm:items-center">
           <div className="text-xs text-white/55">
-            © {new Date().getFullYear()} DAN Fight Club · Lublin
+            © {new Date().getFullYear()} Martial Arts Academy · DISCIPLINE
           </div>
 
           <div className="text-xs text-white/55">

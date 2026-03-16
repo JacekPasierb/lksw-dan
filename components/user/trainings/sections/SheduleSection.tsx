@@ -22,7 +22,7 @@ type ScheduleItem = {
 };
 
 type LocationSchedule = {
-  key: "leczna" | "swidnik" | "milejow";
+  key: "leczna" | "lublin" | "lubartów";
   label: string;
   season?: string;
   place: string;
@@ -40,11 +40,11 @@ const SCHEDULE: LocationSchedule[] = [
     address: "ul. Bogdanowicza",
     coaches: [
       {
-        name: "Emilia Szalak",
+        name: "Tener 1",
         rank: "I dan",
         discipline: "Kickboxing",
-        phone: "733 222 537",
-        photo: "/images/coaches/szalak.webp",
+        phone: "600 123 123",
+        photo: "/placeholder/coach.webp",
       },
     ],
     items: [
@@ -54,22 +54,24 @@ const SCHEDULE: LocationSchedule[] = [
     ],
   },
   {
-    key: "swidnik",
-    label: "ŚWIDNIK",
-    place: "Dojang Świdnik",
-    address: "ul. Kardynała Stefana Wyszyńskiego 14, I piętro (nad RTV AGD)",
+    key: "lublin",
+    label: "LUBLIN",
+    place: "Orkana",
+    address: "ul. Orkana 14, I piętro",
     coaches: [
       {
-        name: "Piotr Bernat",
-        rank: "VI dan",
-        phone: "602 351 585",
-        photo: "/images/coaches/bernat.webp",
+        name: "Tener 1",
+        rank: "I dan",
+        discipline: "Kickboxing",
+        phone: "600 123 123",
+        photo: "/placeholder/coach.webp",
       },
       {
-        name: "Piotr Żołędź",
-        rank: "II dan",
-        phone: "609 571 274",
-        photo: "/images/coaches/zoledz.webp",
+        name: "Tener 2",
+        rank: "I dan",
+        discipline: "Kickboxing",
+        phone: "600 123 123",
+        photo: "/placeholder/coach.webp",
       },
     ],
     items: [
@@ -81,7 +83,7 @@ const SCHEDULE: LocationSchedule[] = [
       {
         group: "Zawodnicza starsza Kickboxing/Taekwon-do",
         days: "Pon, Śr, Pt",
-        time: "18:30 – 20:00 (Pt także 17:30 – 19:30)",
+        time: "18:30 – 20:00 ",
       },
       {group: "Taekwon-do — klasyka", days: "Pt", time: "17:00 – 18:30"},
       {
@@ -92,16 +94,17 @@ const SCHEDULE: LocationSchedule[] = [
     ],
   },
   {
-    key: "milejow",
-    label: "MILEJÓW",
-    place: "Szkoła Podstawowa w Milejowie",
-    address: "Poniedziałki, środy",
+    key: "lubartów",
+    label: "LUBARTÓW",
+    place: "Szkoła Podstawowa w Lubartowie",
+    address: "ul. Lubartowska 123, I piętro",
     coaches: [
       {
-        name: "Łukasz Staiński",
+        name: "Tener 1",
         rank: "I dan",
-        phone: "787 612 765",
-        photo: "/images/coaches/stainski.webp",
+        discipline: "Kickboxing",
+        phone: "600 123 123",
+        photo: "/placeholder/coach.webp",
       },
     ],
     items: [
@@ -203,7 +206,7 @@ export default function ScheduleSection() {
                             alt={c.name}
                             fill
                             sizes="112px"
-                            className="object-cover"
+                            className="object-fit"
                           />
                         ) : null}
                       </div>
